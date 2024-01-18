@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  width: 100%;
+  padding: 0;
+}
+
+.menuNav img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contactNav {
+  height: 50px;
+  width: 100%;
+  background-color: #008000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactNav > div {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.contactNav > div > p, a {
+  padding: 0 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.menuNav {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.homeContainer{
+  margin-top: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactNav {
+    height: auto;
+    width: 100%;
+    background-color: #008000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #rightSection {
+    flex-direction: column;
+  }
+
+  .contactNav > div > p {
+    margin: 2px;
+  }
+
+  .menuNav {
+    flex-direction: column;
+  }
+}
