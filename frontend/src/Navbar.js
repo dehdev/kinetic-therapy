@@ -5,16 +5,17 @@ import logo from "./logo.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 var greenText = "#008000";
 var selectedColor = "#D80027";
 
-const navButtons = [
+const horizontalButtons = [
   <Button
     key="acasa"
+    size="large"
     sx={{
-      backgroundColor: "lightgray",
+      backgroundColor: "#E5E4E2",
       color: greenText,
       fontFamily: "Varela Round, sans-serif",
     }}
@@ -23,30 +24,35 @@ const navButtons = [
   </Button>,
   <Button
     key="servicii"
+    size="large"
     sx={{ color: greenText, fontFamily: "Varela Round, sans-serif" }}
   >
     Servicii
   </Button>,
   <Button
     key="cursuri"
+    size="large"
     sx={{ color: greenText, fontFamily: "Varela Round, sans-serif" }}
   >
     Cursuri
   </Button>,
   <Button
     key="evenimente"
+    size="large"
     sx={{ color: greenText, fontFamily: "Varela Round, sans-serif" }}
   >
     Evenimente
   </Button>,
   <Button
     key="despre noi"
+    size="large"
     sx={{ color: greenText, fontFamily: "Varela Round, sans-serif" }}
   >
     Despre noi
   </Button>,
   <Button
     key="contact"
+    size="large"
     sx={{ color: greenText, fontFamily: "Varela Round, sans-serif" }}
   >
     Contact
@@ -91,6 +97,7 @@ export class Navbar extends Component {
             }}
           >
             <ButtonGroup
+              orientation="horizontal"
               variant="text"
               aria-label="vertical contained button group"
               sx={{
@@ -99,7 +106,7 @@ export class Navbar extends Component {
                 },
               }}
             >
-              {navButtons}
+              {horizontalButtons}
             </ButtonGroup>
           </Box>
         </nav>
