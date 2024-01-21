@@ -10,11 +10,6 @@ html {
   padding: 0;
 }
 
-.menuNav img {
-  max-width: 100%;
-  height: auto;
-}
-
 .contactNav {
   height: 50px;
   width: 100%;
@@ -31,7 +26,8 @@ html {
   align-items: center;
 }
 
-.contactNav > div > p, a {
+.contactNav > div > p,
+a {
   padding: 0 15px;
   justify-content: center;
   display: flex;
@@ -40,17 +36,7 @@ html {
   color: white;
 }
 
-.menuNav {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.homeContainer{
+.homeContainer {
   margin-top: 500px;
 }
 
@@ -71,9 +57,5 @@ html {
 
   .contactNav > div > p {
     margin: 2px;
-  }
-
-  .menuNav {
-    flex-direction: column;
   }
 }
