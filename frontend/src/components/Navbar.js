@@ -6,24 +6,23 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import logo from "../logo.png";
+import "../fonts/wv.ttf";
 
 const pages = [
-  "Acasă",
+  "Despre noi",
   "Servicii",
   "Cursuri",
   "Evenimente",
-  "Despre noi",
   "Contact",
 ];
 
-var greenText = "#008000";
+var greenTextColor = "#008000";
+var selectedPageColor = "#D80027";
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -43,134 +42,49 @@ function Navbar() {
 
   return (
     <>
-      <nav className="contactNav">
-        <div>
-          <p>
-            {" "}
-            <CalendarMonthIcon sx={{ paddingRight: "5px" }} />
-            Program: luni - vineri 8:00 - 20:00
-          </p>
-        </div>
-        <div id="rightSection">
-          <p>
-            {" "}
-            <EmailIcon sx={{ paddingRight: "5px" }} />
-            pusastef@kinetoterapietarachiu.ro
-          </p>
-          <p>
-            {" "}
-            <PhoneIcon sx={{ paddingRight: "5px" }} />
-            <u>(+40) 123 345 678</u>
-          </p>
-        </div>
-      </nav>
-      <AppBar position="static" sx={{ background: "white", color: greenText }}>
-        <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              maxWidth: "80%",
-              height: "auto",
-            }}
-            alt="logo"
-            src={logo}
-          />
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "flex-end",
-              mr: 2,
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+        <Box className="contactNav">
+          <Box>
+            <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
+              <CalendarMonthIcon sx={{ paddingRight: "5px" }} />
+              Program: luni - vineri 8:00 - 20:00
+            </Typography>
+          </Box>
+          <Box id="rightSection">
+            <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
+              <EmailIcon sx={{ paddingRight: "5px" }} />
+              pusastef@kinetoterapietarachiu.ro
+            </Typography>
+            <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
+              <PhoneIcon sx={{ paddingRight: "5px" }} />
+              (+40) 123 345 678
+            </Typography>
+          </Box>
+        </Box>
+        <AppBar
+          position="static"
+          sx={{ background: "white", color: greenTextColor }}
+        >
+          <Toolbar disableGutters>
+            <Typography
+              variant="h3"
+              component="div"
               sx={{
-                display: { xs: "block", md: "none" },
+                flexGrow: 1,
+                fontFamily: "Logo",
+                ml: 2,
+                mr: 2,
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{}}>
-                    {page}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-              mr: 10,
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: greenText,
-                  display: "block",
-                  fontFamily: "Varela Round, sans-serif",
-                  borderRight: 1,
-                  borderRadius: 0,
-                }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
+              KINETIC THERAPY <span style={{ color: "black" }}>junior</span>
+            </Typography>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+                justifyContent: "flex-end",
+                mr: 2,
               }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            ></Menu>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </>
-  );
-}
-export default Navbar;
-/*
-
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            >
               <IconButton
                 size="large"
                 aria-controls="menu-appbar"
@@ -185,12 +99,12 @@ export default Navbar;
                 anchorEl={anchorElNav}
                 anchorOrigin={{
                   vertical: "bottom",
-                  horizontal: "left",
+                  horizontal: "right",
                 }}
                 keepMounted
                 transformOrigin={{
                   vertical: "top",
-                  horizontal: "left",
+                  horizontal: "right",
                 }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
@@ -200,30 +114,36 @@ export default Navbar;
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" sx={{}}>
-                      {page}
-                    </Typography>
+                    <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                justifyContent: "flex-end",
+                mr: 2,
+              }}
+            >
               {pages.map((page) => (
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
-                    color: greenText,
+                    color: greenTextColor,
                     display: "block",
                     fontFamily: "Varela Round, sans-serif",
+                    textAlign: "center",
                   }}
                 >
                   {page}
                 </Button>
               ))}
             </Box>
-            <Box sx={{ flexGrow: 0}}>
+            <Box sx={{ flexGrow: 0 }}>
               <Menu
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
@@ -241,4 +161,9 @@ export default Navbar;
                 onClose={handleCloseUserMenu}
               ></Menu>
             </Box>
-*/
+          </Toolbar>
+        </AppBar>
+    </>
+  );
+}
+export default Navbar;
