@@ -15,6 +15,36 @@ html {
   src: local("wv"), url("./fonts/wv.ttf") format("truetype");
 }
 
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #008000; /* Original green */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; /* Combined transition property with box-shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.scroll-button:hover {
+  background-color: #006400; /* Darker shade for hover */
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.scroll-button:active {
+  background-color: #004d00; /* Darker shade for active */
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Revert to the original shadow on active */
+}
+
 .contactNav {
   height: 50px;
   width: 100%;
@@ -29,10 +59,10 @@ html {
   display: flex;
   color: white;
   align-items: center;
+  justify-content: center;
 }
 
-.contactNav > div > p,
-a {
+.contactNav > div > p {
   padding: 0 15px;
   justify-content: center;
   display: flex;
@@ -52,12 +82,24 @@ a {
   align-items: center;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .transitionImage {
   width: 100%;
   height: 150px;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.transitionImage2 {
+  width: 100%;
+  height: 150px;
 }
 
 .imageContainerContent {
@@ -96,14 +138,14 @@ a {
   margin-top: 30px;
   padding: 20px;
 
-  box-shadow: 0px 50px 55.88px 12.12px rgba(137, 137, 137, 0.23);
+  box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   max-width: 1200px;
   border-top: 3px solid #008000;
   transition: box-shadow 0.5s;
 }
 
 .aboutUs:hover {
-  box-shadow: 0 0 55.88px 12.12px  rgba(137, 137, 137, 0.473);
+  box-shadow: 0px 10px 20px rgba(77, 77, 77, 0.23); /* Adjusted spread-radius */
 }
 
 .aboutUs > img {
@@ -113,6 +155,31 @@ a {
 .tab {
   display: inline-block;
   margin-left: 25px; /* for e.g: value = 40px*/
+}
+
+.servicesCardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  margin: 10px 10px;
+  border-top: 3px solid #008000;
+  transition: border-top 0.5s, box-shadow 0.5s, transform 0.5s;
+  box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  border-top: 3px solid #f28c28;
+  box-shadow: 0px 10px 20px rgba(77, 77, 77, 0.23); /* Adjusted spread-radius */
 }
 
 @media screen and (max-width: 1200px) {
@@ -142,6 +209,10 @@ a {
     object-fit: cover;
   }
 
+  .transitionImage2 {
+    object-fit: cover;
+  }
+
   .aboutUs {
     flex-direction: column;
   }
@@ -149,5 +220,14 @@ a {
   .aboutUs > img {
     margin-right: 0px;
     margin-bottom: 25px;
+  }
+
+  .serviceCard {
+    width: 300px;
+    height: 350px;
+  }
+
+  .serviceCard:hover {
+    transform: scale(1.05);
   }
 }
