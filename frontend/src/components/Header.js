@@ -13,7 +13,14 @@ import EmailIcon from "@mui/icons-material/Email";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import "../fonts/wv.ttf";
 
-const pages = ["Despre noi", "Servicii", "Cursuri", "Evenimente", "Contact"];
+const pages = [
+  "Despre noi",
+  "Servicii",
+  "Echipa",
+  "Cursuri",
+  "Evenimente",
+  "Contact",
+];
 
 var greenTextColor = "#008000";
 var selectedPageColor = "#D80027";
@@ -35,7 +42,7 @@ function Navbar() {
   };
 
   return (
-    <nav>
+    <>
       <Box className="contactNav">
         <Box>
           <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
@@ -92,6 +99,7 @@ function Navbar() {
           >
             <IconButton
               size="large"
+              title="menu-appbar-title"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -168,7 +176,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-    </nav>
+    </>
   );
 }
 export default Navbar;

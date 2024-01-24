@@ -11,6 +11,7 @@ import {
   responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material/styles";
+import TeamCards from "../components/TeamCards";
 
 var greenTextColor = "#008000";
 
@@ -42,7 +43,7 @@ export class Home extends Component {
             />
             <div className="imageContainerContent">
               <Typography
-                variant="h6"
+                variant="h5"
                 component="div"
                 sx={{
                   flexGrow: 1,
@@ -52,12 +53,18 @@ export class Home extends Component {
                 }}
               >
                 Descoperă arta masajului alături de clinica noastră de
-                kinetoterapie.
+                <span style={{ borderBottom: "3px solid #008000" }}>
+                  {" "}
+                  kinetoterapie.
+                </span>
                 <br></br>
                 <br></br>
-                Cursuri autorizate și servicii de recuperare medicală
-                profesionale pentru o carieră de succes în domeniul terapiilor
-                corporale.{" "}
+                Cursuri{" "}
+                <span style={{ borderBottom: "3px solid #008000" }}>
+                  autorizate
+                </span>{" "}
+                și servicii de recuperare medicală profesionale pentru o carieră
+                de succes în domeniul terapiilor corporale.{" "}
               </Typography>
               <Stack
                 direction="row"
@@ -124,18 +131,25 @@ export class Home extends Component {
                   flexGrow: 1,
                   fontFamily: "Varela Round, sans-serif",
                   color: "black",
+                  textAlign: "justify",
                 }}
               >
-                <span className="tab"></span>Echipa Kinetic Therapy vă așteaptă
-                la cabinetul nostru din Brăila, în cartierul Progresul, str.
-                Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din
-                domeniul Recuperării Medicale. Personalul nostru calificat
-                aplică aceste terapii în funcție de recomandarea medicală a
-                pacientului, precum și de indicațiile și contraindicațiile
-                fiecărei terapii în parte: kinetoterapie, reeducare posturală
-                globală, Yumeiho, Terapie Schroth, bandajare neuromusculară,
-                drenaj limfatic manual, masaj terapeutic, reflexoterapie,
-                terapie Vojta, terapie Reiki, etc.
+                <span className="tab"></span>Echipa{" "}
+                <span style={{ borderBottom: "2px solid #008000" }}>
+                  Kinetic Therapy
+                </span>{" "}
+                vă așteaptă la cabinetul nostru din{" "}
+                <span style={{ borderBottom: "2px solid #008000" }}>
+                  Brăila
+                </span>
+                , în cartierul Progresul, str. Octav Doicescu, bl. D8, parter,
+                cu cele mai noi terapii din domeniul Recuperării Medicale.
+                Personalul nostru calificat aplică aceste terapii în funcție de
+                recomandarea medicală a pacientului, precum și de indicațiile și
+                contraindicațiile fiecărei terapii în parte: kinetoterapie,
+                reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare
+                neuromusculară, drenaj limfatic manual, masaj terapeutic,
+                reflexoterapie, terapie Vojta, terapie Reiki, etc.
                 <br></br>
                 <span className="tab"></span>Ne străduim să ținem în permanență
                 cont de nevoile pacienților noștri și să le oferim cele mai noi
@@ -148,10 +162,13 @@ export class Home extends Component {
                 <br></br>
                 <span className="tab"></span>Ne preocupăm și de achiziționarea
                 aparaturii medicale performante pentru orașul nostru, precum
-                terapia TECAR prin achiziționarea unui aparat TECAR WINBACK,
-                elongații vertebrale prin achiziționarea unei mese de elongație
-                BTL, și pentru partea de fizioterapie, o combine BTL care
-                dispune de terapie Laser, Magnetoterapie, Ultrasunet și
+                terapia TECAR prin achiziționarea unui aparat{" "}
+                <span style={{ borderBottom: "2px solid #008000" }}>
+                  TECAR WINBACK
+                </span>
+                , elongații vertebrale prin achiziționarea unei mese de
+                elongație BTL, și pentru partea de fizioterapie, o combine BTL
+                care dispune de terapie Laser, Magnetoterapie, Ultrasunet și
                 electroterapie.<br></br>
                 <span className="tab"></span>Încercăm să oferim o gamă cât mai
                 largă de terapii, astfel încât să rezolvăm problemele
@@ -165,12 +182,25 @@ export class Home extends Component {
                 flexGrow: 1,
                 fontFamily: "Varela Round, sans-serif",
                 color: "black",
-                mt:10
+                mt: 10,
               }}
             >
               Servicii{" "}
             </Typography>
-            <ServicesCards/>
+            <ServicesCards />
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontFamily: "Varela Round, sans-serif",
+                color: "black",
+                mt: 10,
+              }}
+            >
+              Echipa{" "}
+            </Typography>
+            <TeamCards />
           </div>
           <Footer />
           <ScrollButton />
