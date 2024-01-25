@@ -22,7 +22,7 @@ export default class TeamCards extends Component {
           <div className="teamCard">
             <div className="teamCardImageContainer">
               <img
-                src="assets/images/calina_nicolescu-veselu.png"
+                src="assets/images/team/calina_nicolescu-veselu.png"
                 alt="team member"
                 className="teamCardImage"
               />
@@ -40,7 +40,7 @@ export default class TeamCards extends Component {
           <div className="teamCard">
             <div className="teamCardImageContainer">
               <img
-                src="assets/images/radita-tarachiu.png"
+                src="assets/images/team/radita-tarachiu.png"
                 alt="team member"
                 className="teamCardImage"
               />
@@ -58,7 +58,7 @@ export default class TeamCards extends Component {
           <div className="teamCard">
             <div className="teamCardImageContainer">
               <img
-                src="assets/images/viorel-tarachiu.png"
+                src="assets/images/team/viorel-tarachiu.png"
                 alt="team member"
                 className="teamCardImage"
               />

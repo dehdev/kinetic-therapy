@@ -257,6 +257,7 @@ a:active {
   width: 230px;
   height: 330px;
   overflow: hidden;
+  background-color: white;
 }
 
 .teamCardImage {

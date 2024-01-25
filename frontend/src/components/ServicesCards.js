@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "@mui/material/Button";
+import ServicesModal from "./modals/SerivcesModal";
 
 import {
   createTheme,
@@ -30,21 +31,12 @@ export default class ServicesCards extends Component {
               />
             </div>
             <p style={{ fontSize: "28px" }}>Îngrijire medicală la domiciliu</p>
+
             <div className="serviceCardButton">
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+              <ServicesModal
+                dialogText="Text for dialog 1"
+                dialogTitle="Îngrijire medicală la domiciliu"
+              />
             </div>
           </div>
           <div className="serviceCard">
