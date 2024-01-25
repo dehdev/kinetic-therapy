@@ -123,11 +123,15 @@ a:active {
 }
 
 .contentContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutUsContainer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
 }
 
 .aboutUs {
@@ -139,9 +143,8 @@ a:active {
   align-items: center;
   margin-top: 30px;
   padding: 20px;
-
-  box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   max-width: 1200px;
+  box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   border-top: 3px solid #008000;
   transition: box-shadow 0.5s;
 }
@@ -224,7 +227,6 @@ a:active {
 }
 
 .teamCard {
-  margin: 10px 10px;
   box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   width: 230px;
   display: flex;
@@ -266,6 +268,18 @@ a:active {
 
 .teamCardImageContainer:hover img {
   transform: scale(1.1);
+}
+
+.teamSwiper {
+  height: 500px;
+  width: 100%;
+}
+
+.swiper-slide{
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {

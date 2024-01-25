@@ -13,8 +13,6 @@ import {
 } from "@mui/material/styles";
 import TeamCards from "../components/TeamCards";
 
-var greenTextColor = "#008000";
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -115,65 +113,68 @@ export class Home extends Component {
             >
               Despre noi{" "}
             </Typography>
-            <div className="aboutUs">
-              <img
-                src="assets/images/massage.png"
-                alt="massage"
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "400px",
-                }}
-              />
-              <Typography
-                variant="body1"
-                component="p"
-                sx={{
-                  flexGrow: 1,
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "black",
-                  textAlign: "justify",
-                }}
-              >
-                <span className="tab"></span>Echipa{" "}
-                <span style={{ borderBottom: "2px solid #008000" }}>
-                  Kinetic Therapy
-                </span>{" "}
-                vă așteaptă la cabinetul nostru din{" "}
-                <span style={{ borderBottom: "2px solid #008000" }}>
-                  Brăila
-                </span>
-                , în cartierul Progresul, str. Octav Doicescu, bl. D8, parter,
-                cu cele mai noi terapii din domeniul Recuperării Medicale.
-                Personalul nostru calificat aplică aceste terapii în funcție de
-                recomandarea medicală a pacientului, precum și de indicațiile și
-                contraindicațiile fiecărei terapii în parte: kinetoterapie,
-                reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare
-                neuromusculară, drenaj limfatic manual, masaj terapeutic,
-                reflexoterapie, terapie Vojta, terapie Reiki, etc.
-                <br></br>
-                <span className="tab"></span>Ne străduim să ținem în permanență
-                cont de nevoile pacienților noștri și să le oferim cele mai noi
-                terapii existente pe piața medicală. Unele dintre acestea sunt
-                unice pe piața brăileană, cum ar fi terapia Vojta, terapia
-                Schroth și Reeducarea posturală globală RPG. Organizăm frecvent
-                cursuri prin programele de educație medicală continuă la care
-                personalul nostru participă, tocmai pentru a putea oferi
-                pacienților noștri servicii medicale de cea mai înaltă calitate.{" "}
-                <br></br>
-                <span className="tab"></span>Ne preocupăm și de achiziționarea
-                aparaturii medicale performante pentru orașul nostru, precum
-                terapia TECAR prin achiziționarea unui aparat{" "}
-                <span style={{ borderBottom: "2px solid #008000" }}>
-                  TECAR WINBACK
-                </span>
-                , elongații vertebrale prin achiziționarea unei mese de
-                elongație BTL, și pentru partea de fizioterapie, o combine BTL
-                care dispune de terapie Laser, Magnetoterapie, Ultrasunet și
-                electroterapie.<br></br>
-                <span className="tab"></span>Încercăm să oferim o gamă cât mai
-                largă de terapii, astfel încât să rezolvăm problemele
-                pacienților noștri cât mai eficient! Vă așteptăm cu drag!{" "}
-              </Typography>
+            <div className="aboutUsContainer">
+              <div className="aboutUs">
+                <img
+                  src="assets/images/massage.png"
+                  alt="massage"
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "400px",
+                  }}
+                />
+                <Typography
+                  variant="body1"
+                  component="p"
+                  sx={{
+                    flexGrow: 1,
+                    fontFamily: "Varela Round, sans-serif",
+                    color: "black",
+                    textAlign: "justify",
+                  }}
+                >
+                  <span className="tab"></span>Echipa{" "}
+                  <span style={{ borderBottom: "2px solid #008000" }}>
+                    Kinetic Therapy
+                  </span>{" "}
+                  vă așteaptă la cabinetul nostru din{" "}
+                  <span style={{ borderBottom: "2px solid #008000" }}>
+                    Brăila
+                  </span>
+                  , în cartierul Progresul, str. Octav Doicescu, bl. D8, parter,
+                  cu cele mai noi terapii din domeniul Recuperării Medicale.
+                  Personalul nostru calificat aplică aceste terapii în funcție
+                  de recomandarea medicală a pacientului, precum și de
+                  indicațiile și contraindicațiile fiecărei terapii în parte:
+                  kinetoterapie, reeducare posturală globală, Yumeiho, Terapie
+                  Schroth, bandajare neuromusculară, drenaj limfatic manual,
+                  masaj terapeutic, reflexoterapie, terapie Vojta, terapie
+                  Reiki, etc.
+                  <br></br>
+                  <span className="tab"></span>Ne străduim să ținem în
+                  permanență cont de nevoile pacienților noștri și să le oferim
+                  cele mai noi terapii existente pe piața medicală. Unele dintre
+                  acestea sunt unice pe piața brăileană, cum ar fi terapia
+                  Vojta, terapia Schroth și Reeducarea posturală globală RPG.
+                  Organizăm frecvent cursuri prin programele de educație
+                  medicală continuă la care personalul nostru participă, tocmai
+                  pentru a putea oferi pacienților noștri servicii medicale de
+                  cea mai înaltă calitate. <br></br>
+                  <span className="tab"></span>Ne preocupăm și de achiziționarea
+                  aparaturii medicale performante pentru orașul nostru, precum
+                  terapia TECAR prin achiziționarea unui aparat{" "}
+                  <span style={{ borderBottom: "2px solid #008000" }}>
+                    TECAR WINBACK
+                  </span>
+                  , elongații vertebrale prin achiziționarea unei mese de
+                  elongație BTL, și pentru partea de fizioterapie, o combine BTL
+                  care dispune de terapie Laser, Magnetoterapie, Ultrasunet și
+                  electroterapie.<br></br>
+                  <span className="tab"></span>Încercăm să oferim o gamă cât mai
+                  largă de terapii, astfel încât să rezolvăm problemele
+                  pacienților noștri cât mai eficient! Vă așteptăm cu drag!{" "}
+                </Typography>
+              </div>
             </div>
             <Typography
               variant="h2"

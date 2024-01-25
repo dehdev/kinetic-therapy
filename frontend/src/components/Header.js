@@ -23,7 +23,6 @@ const pages = [
 ];
 
 var greenTextColor = "#008000";
-var selectedPageColor = "#D80027";
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

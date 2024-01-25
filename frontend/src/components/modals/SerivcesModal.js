@@ -42,20 +42,20 @@ export default function ServicesModal({ dialogText, dialogTitle }) {
   return (
     <React.Fragment>
       <Button
-                variant="contained"
-                color="primary"
-                onClick={handleClickOpen}
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+        variant="contained"
+        color="primary"
+        onClick={handleClickOpen}
+        sx={{
+          fontFamily: "Varela Round, sans-serif",
+          color: "white",
+          width: "200px", // Adjust the width as needed
+          height: "40px", // Adjust the height as needed
+          fontSize: "16px", // Adjust the font size as needed
+          borderRadius: "20px",
+        }}
+      >
+        Află mai multe
+      </Button>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
