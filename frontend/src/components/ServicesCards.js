@@ -34,7 +34,7 @@ export default class ServicesCards extends Component {
 
             <div className="serviceCardButton">
               <ServicesModal
-                dialogText="Text for dialog 1"
+                dialogText="Echipa Kinetic Therapy vă așteaptă la cabinetul nostru din Brăila, în cartierul Progresul, str. Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din domeniul Recuperării Medicale. Personalul nostru calificat aplică aceste terapii în funcție de recomandarea medicală a pacientului, precum și de indicațiile și contraindicațiile fiecărei terapii în parte: kinetoterapie, reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare neuromusculară, drenaj limfatic manual, masaj terapeutic, reflexoterapie, terapie Vojta, terapie Reiki, etc."
                 dialogTitle="Îngrijire medicală la domiciliu"
               />
             </div>
@@ -51,20 +51,10 @@ export default class ServicesCards extends Component {
               Medicină alternativă și naturistă
             </p>
             <div className="serviceCardButton">
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+              <ServicesModal
+                dialogText="Echipa Kinetic Therapy vă așteaptă la cabinetul nostru din Brăila, în cartierul Progresul, str. Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din domeniul Recuperării Medicale. Personalul nostru calificat aplică aceste terapii în funcție de recomandarea medicală a pacientului, precum și de indicațiile și contraindicațiile fiecărei terapii în parte: kinetoterapie, reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare neuromusculară, drenaj limfatic manual, masaj terapeutic, reflexoterapie, terapie Vojta, terapie Reiki, etc."
+                dialogTitle="Medicină alternativă și naturistă"
+              />
             </div>
           </div>
           <div className="serviceCard">
@@ -77,20 +67,10 @@ export default class ServicesCards extends Component {
             </div>
             <p style={{ fontSize: "28px" }}>Neurologie pediatrică</p>
             <div className="serviceCardButton">
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+              <ServicesModal
+                dialogText="Echipa Kinetic Therapy vă așteaptă la cabinetul nostru din Brăila, în cartierul Progresul, str. Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din domeniul Recuperării Medicale. Personalul nostru calificat aplică aceste terapii în funcție de recomandarea medicală a pacientului, precum și de indicațiile și contraindicațiile fiecărei terapii în parte: kinetoterapie, reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare neuromusculară, drenaj limfatic manual, masaj terapeutic, reflexoterapie, terapie Vojta, terapie Reiki, etc."
+                dialogTitle="Neurologie pediatrică"
+              />
             </div>
           </div>
           <div className="serviceCard">
@@ -103,20 +83,10 @@ export default class ServicesCards extends Component {
             </div>
             <p style={{ fontSize: "28px" }}>Pediatrie</p>
             <div className="serviceCardButton">
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+              <ServicesModal
+                dialogText="Echipa Kinetic Therapy vă așteaptă la cabinetul nostru din Brăila, în cartierul Progresul, str. Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din domeniul Recuperării Medicale. Personalul nostru calificat aplică aceste terapii în funcție de recomandarea medicală a pacientului, precum și de indicațiile și contraindicațiile fiecărei terapii în parte: kinetoterapie, reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare neuromusculară, drenaj limfatic manual, masaj terapeutic, reflexoterapie, terapie Vojta, terapie Reiki, etc."
+                dialogTitle="Pediatrie"
+              />
             </div>
           </div>
           <div className="serviceCard">
@@ -131,20 +101,10 @@ export default class ServicesCards extends Component {
               Recuperare medicală, kinetoterapie, fizioterapie, reabilitare
             </p>
             <div className="serviceCardButton">
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  fontFamily: "Varela Round, sans-serif",
-                  color: "white",
-                  width: "200px", // Adjust the width as needed
-                  height: "40px", // Adjust the height as needed
-                  fontSize: "16px", // Adjust the font size as needed
-                  borderRadius: "20px",
-                }}
-              >
-                Află mai multe
-              </Button>
+              <ServicesModal
+                dialogText="Echipa Kinetic Therapy vă așteaptă la cabinetul nostru din Brăila, în cartierul Progresul, str. Octav Doicescu, bl. D8, parter, cu cele mai noi terapii din domeniul Recuperării Medicale. Personalul nostru calificat aplică aceste terapii în funcție de recomandarea medicală a pacientului, precum și de indicațiile și contraindicațiile fiecărei terapii în parte: kinetoterapie, reeducare posturală globală, Yumeiho, Terapie Schroth, bandajare neuromusculară, drenaj limfatic manual, masaj terapeutic, reflexoterapie, terapie Vojta, terapie Reiki, etc."
+                dialogTitle="Recuperare medicală"
+              />
             </div>
           </div>
         </div>
