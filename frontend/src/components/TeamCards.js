@@ -2,12 +2,11 @@ import React, { Component } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "../styles.css"
+import "../styles.css";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 
 // import required modules
 import { Pagination } from "swiper/modules";
@@ -18,11 +17,11 @@ export default class TeamCards extends Component {
       <>
         <Swiper
           slidesPerView={"auto"}
-          spaceBetween={0}
+          spaceBetween={30}
           initialSlide={1}
           centeredSlides={true}
           pagination={{
-            clickable: true,
+            clickable: false,
           }}
           modules={[Pagination]}
           className="teamSwiper"

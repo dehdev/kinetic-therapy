@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import ScrollButton from "../components/ScrollButton";
 import ServicesCards from "../components/ServicesCards";
+import PhotoGallery from "../components/PhotoGallery";
 import {
   createTheme,
   responsiveFontSizes,
@@ -202,6 +203,31 @@ export class Home extends Component {
               Echipa{" "}
             </Typography>
             <TeamCards />
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontFamily: "Varela Round, sans-serif",
+                color: "black",
+                mt: 10,
+              }}
+            >
+              Contact{" "}
+            </Typography>
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontFamily: "Varela Round, sans-serif",
+                color: "black",
+                mt: 10,
+              }}
+            >
+              Album foto{" "}
+            </Typography>
+            <PhotoGallery />
           </div>
           <Footer />
           <ScrollButton />

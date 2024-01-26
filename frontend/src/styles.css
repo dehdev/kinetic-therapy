@@ -17,6 +17,7 @@ html {
 
 .scroll-button {
   position: fixed;
+  z-index: 1;
   bottom: 20px;
   right: 20px;
   padding: 10px;
@@ -125,6 +126,7 @@ a:active {
 .contentContainer {
   width: 100%;
   text-align: center;
+  display: block;
 }
 
 .aboutUsContainer {
@@ -147,6 +149,7 @@ a:active {
   box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   border-top: 3px solid #008000;
   transition: box-shadow 0.5s;
+  background-color: white;
 }
 
 .aboutUs:hover {
@@ -214,18 +217,6 @@ a:active {
   width: 100%;
 }
 
-.teamCardsContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  background-image: url("../public/assets/images/background-art-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .teamCard {
   box-shadow: 0px 10px 20px rgba(137, 137, 137, 0.23); /* Adjusted spread-radius */
   width: 230px;
@@ -271,18 +262,36 @@ a:active {
 }
 
 .teamSwiper {
+  margin-top: 30px;
   height: 500px;
   width: 100%;
+  background-image: url("../public/assets/images/background-art-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.swiper-slide{
+.swiper-slide {
   text-align: center;
   display: flex !important;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 230px !important;
 }
 
-@media screen and (max-width: 1200px) {
+.image-gallery {
+  margin: 30px auto;
+  width: 65%;
+}
+
+.image-gallery-icon:hover {
+  color: #008000 !important;
+}
+
+.image-gallery-bullet:hover {
+  background-color: #008000 !important;
+}
+
+@media screen and (max-width: 1024px) {
   .contactNav {
     height: auto;
     width: 100%;
@@ -332,5 +341,10 @@ a:active {
 
   .serviceCard:hover {
     transform: scale(1.05);
+  }
+
+  .image-gallery {
+    margin: 30px auto;
+    width: 100%;
   }
 }

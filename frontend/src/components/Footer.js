@@ -210,7 +210,7 @@ export default function Footer() {
                   Termeni și condiții
                 </Link>
                 <Link
-                  href="#"
+                  href="https://anpc.ro"
                   sx={{
                     color: "#ffffff", // Default color
                     "&:visited": {
@@ -220,6 +220,24 @@ export default function Footer() {
                 >
                   ANPC
                 </Link>
+                <a href="https://anpc.ro/ce-este-sal/">
+                  <img
+                    style={{
+                      width: "200px",
+                    }}
+                    src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sal.png"
+                    alt="Solutionarea Alternativa a Litigiilor"
+                  ></img>
+                </a>
+                <a href="https://ec.europa.eu/consumers/odr">
+                  <img
+                    style={{
+                      width: "200px",
+                    }}
+                    src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sol.png"
+                    alt="Solutionarea Online a Litigiilor"
+                  ></img>
+                </a>
               </Grid>
             </Grid>
             <Box mt={5} sx={{ p: 2 }}>
