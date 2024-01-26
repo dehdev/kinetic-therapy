@@ -7,6 +7,7 @@ import Stack from "@mui/material/Stack";
 import ScrollButton from "../components/ScrollButton";
 import ServicesCards from "../components/ServicesCards";
 import PhotoGallery from "../components/PhotoGallery";
+import ContactForm from "../components/ContactForm";
 import {
   createTheme,
   responsiveFontSizes,
@@ -77,7 +78,7 @@ export class Home extends Component {
                   sx={{
                     fontFamily: "Varela Round, sans-serif",
                     color: "white",
-                    width: "150px", // Adjust the width as needed
+                    width: {md:"150px", xs:"120px"}, // Adjust the width as needed
                     height: "60px", // Adjust the height as needed
                     fontSize: "16px", // Adjust the font size as needed
                     borderRadius: "20px",
@@ -91,7 +92,7 @@ export class Home extends Component {
                   sx={{
                     fontFamily: "Varela Round, sans-serif",
                     color: "white",
-                    width: "150px", // Adjust the width as needed
+                    width: {md:"150px", xs:"120px"}, // Adjust the width as needed
                     height: "60px", // Adjust the height as needed
                     fontSize: "16px", // Adjust the font size as needed
                     borderRadius: "20px",
@@ -213,8 +214,9 @@ export class Home extends Component {
                 mt: 10,
               }}
             >
-              Contact{" "}
+              Discută cu noi!{" "}
             </Typography>
+            <ContactForm/>
             <Typography
               variant="h2"
               component="div"

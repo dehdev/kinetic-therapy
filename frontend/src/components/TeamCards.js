@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles.css";
 
 // Import Swiper styles
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 
 // import required modules
@@ -16,10 +16,11 @@ export default class TeamCards extends Component {
     return (
       <>
         <Swiper
+          grabCursor={true}
           slidesPerView={"auto"}
           spaceBetween={30}
-          initialSlide={1}
           centeredSlides={true}
+          initialSlide={1}
           pagination={{
             clickable: false,
           }}

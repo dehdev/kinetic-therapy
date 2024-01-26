@@ -52,14 +52,12 @@ function Navbar() {
         <Box id="rightSection">
           <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
             <EmailIcon sx={{ paddingRight: "5px" }} />
-            <span style={{ textDecoration: "none", color: "inherit" }}>
               <a
                 href="mailto:pusastef@kinetoterapietarachiu.ro"
-                style={{ padding: 0 }}
+                style={{ padding: 0 , wordBreak: "break-all", display: "inline-block" }}
               >
                 pusastef@kinetoterapietarachiu.ro
               </a>
-            </span>
           </Typography>
           <Typography sx={{ fontFamily: "Varela Round, sans-serif" }}>
             <PhoneIcon sx={{ paddingRight: "5px" }} />
