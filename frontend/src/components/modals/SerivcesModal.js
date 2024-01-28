@@ -76,11 +76,11 @@ export default function ServicesModal({ dialogText, dialogTitle }) {
           </DialogTitle>
           <DialogContent dividers>
             <Typography gutterBottom>
-              <ul>
-                {listItems.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+              {listItems.map((item, index) => (
+                <p style={{ marginTop: 0 }} key={index}>
+                  {item}
+                </p>
+              ))}
             </Typography>
           </DialogContent>
           <DialogActions>

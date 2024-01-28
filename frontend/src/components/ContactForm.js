@@ -64,6 +64,7 @@ export default class ContactForm extends Component {
                   Brăila, județ Brăila, Cartier Progresul, str. Octav Doicescu
                   nr. 16, bl. D8, sc.1
                 </Typography>
+                <div className="contact-form-separator"></div>
                 <Typography
                   variant="h6"
                   color="white"
@@ -83,6 +84,7 @@ export default class ContactForm extends Component {
                   />
                   <a href="tel:(+40)767421676">(+40) 767 421 676</a>
                 </Typography>
+                <div className="contact-form-separator"></div>
                 <Typography
                   variant="h6"
                   color="white"
@@ -101,12 +103,17 @@ export default class ContactForm extends Component {
                     }}
                   />
                   <a
-                    style={{}}
+                    style={{
+                      padding: 0,
+                      wordBreak: "break-all",
+                      display: "inline-block",
+                    }}
                     href="mailto:pusastef@kinetoterapietarachiu.ro"
                   >
                     pusastef@kinetoterapietarachiu.ro
                   </a>
                 </Typography>
+                <div className="contact-form-separator"></div>
                 <Typography
                   variant="h6"
                   color="white"
