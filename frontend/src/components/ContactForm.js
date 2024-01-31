@@ -52,6 +52,7 @@ export default class ContactForm extends Component {
                     display: "flex",
                     alignItems: "center",
                     textAlign: "left",
+                    margin: 0,
                   }}
                 >
                   <LocationOnIcon
@@ -73,6 +74,7 @@ export default class ContactForm extends Component {
                     fontFamily: "Varela Round, sans-serif",
                     display: "flex",
                     alignItems: "center",
+                    margin: 0,
                   }}
                 >
                   <PhoneIcon
@@ -93,6 +95,7 @@ export default class ContactForm extends Component {
                     fontFamily: "Varela Round, sans-serif",
                     display: "flex",
                     alignItems: "center",
+                    margin: 0,
                   }}
                 >
                   <EmailIcon
@@ -122,6 +125,7 @@ export default class ContactForm extends Component {
                     fontFamily: "Varela Round, sans-serif",
                     display: "flex",
                     alignItems: "center",
+                    margin: 0,
                   }}
                 >
                   <AccessTimeIcon

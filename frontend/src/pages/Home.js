@@ -78,7 +78,7 @@ export class Home extends Component {
                   sx={{
                     fontFamily: "Varela Round, sans-serif",
                     color: "white",
-                    width: {md:"150px", xs:"120px"}, // Adjust the width as needed
+                    width: { md: "150px", xs: "120px" }, // Adjust the width as needed
                     height: "60px", // Adjust the height as needed
                     fontSize: "16px", // Adjust the font size as needed
                     borderRadius: "20px",
@@ -92,7 +92,7 @@ export class Home extends Component {
                   sx={{
                     fontFamily: "Varela Round, sans-serif",
                     color: "white",
-                    width: {md:"150px", xs:"120px"}, // Adjust the width as needed
+                    width: { md: "150px", xs: "120px" }, // Adjust the width as needed
                     height: "60px", // Adjust the height as needed
                     fontSize: "16px", // Adjust the font size as needed
                     borderRadius: "20px",
@@ -117,14 +117,7 @@ export class Home extends Component {
             </Typography>
             <div className="aboutUsContainer">
               <div className="aboutUs">
-                <img
-                  src="assets/images/massage.png"
-                  alt="massage"
-                  style={{
-                    maxWidth: "100%",
-                    maxHeight: "400px",
-                  }}
-                />
+                <PhotoGallery />
                 <Typography
                   variant="body1"
                   component="p"
@@ -216,20 +209,7 @@ export class Home extends Component {
             >
               Discută cu noi!{" "}
             </Typography>
-            <ContactForm/>
-            <Typography
-              variant="h2"
-              component="div"
-              sx={{
-                flexGrow: 1,
-                fontFamily: "Varela Round, sans-serif",
-                color: "black",
-                mt: 10,
-              }}
-            >
-              Album foto{" "}
-            </Typography>
-            <PhotoGallery />
+            <ContactForm />
           </div>
           <Footer />
           <ScrollButton />
