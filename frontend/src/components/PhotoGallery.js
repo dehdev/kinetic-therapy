@@ -10,6 +10,30 @@ const images = [
   {
     original: "/assets/images/photoalbum/img2.jpg",
   },
+  {
+    original: "/assets/images/photoalbum/img3.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img4.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img5.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img6.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img7.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img8.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img9.jpg",
+  },
+  {
+    original: "/assets/images/photoalbum/img10.jpg",
+  },
 ];
 
 export default class PhotoGallery extends Component {

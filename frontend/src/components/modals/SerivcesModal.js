@@ -26,6 +26,10 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiPaper-root": {
     borderRadius: "20px",
   },
+  "& .MuiDialogTitle-root": {
+    margin: "5px",
+    borderRadius: "20px 20px 0 0",
+  },
 }));
 
 export default function ServicesModal({ dialogText, dialogTitle }) {

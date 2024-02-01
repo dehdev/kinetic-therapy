@@ -288,6 +288,10 @@ a:active {
 }
 
 .image-gallery-bullet:hover {
+  background-color: #f28c28 !important;
+}
+
+.image-gallery-bullet.active {
   background-color: #008000 !important;
 }
 
